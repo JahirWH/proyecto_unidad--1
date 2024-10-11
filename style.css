@@ -1,0 +1,429 @@
+:root {
+    /* colores */
+    --first-color: #333333;
+    --second-color: #0077C2;
+    --third-color: #F5F5F5;
+    --fourth-color: #C8FFFF;
+
+    /* texto */
+    --text-color: #5C5C5C;
+    --font-family: "Inter", sans-serif;
+
+    --sm: 16px;
+    --md: 18px;
+    --lg: 22px;
+}
+
+
+/* diseños generales */                                                                                                                                                      
+body {
+    font-family: var(--font-family);
+}
+
+/* estilos para la barra de navegación */
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--lg);
+    font-weight: 500;
+    padding: 0 24px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo__name {
+    color: var(--first-color);
+}
+
+.logo__name--bold, .tema__title--bold, .mockup__title--bold, .aboutMe__info strong{
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.header__menu {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    gap: 16px;
+}
+
+.list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos de la primera seccion (Tema) */
+
+section {
+    padding: 16px 24px; 
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tema__title {
+    font-size: var(--lg);
+    font-weight: 500;
+}
+
+.tema__info {
+    font-size: var(--sm);
+    color: var(--text-color);
+    line-height: 20px;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 0;
+}
+
+.selector__option {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.selector__button {
+    padding: 8px 14px;
+    font-size: var(--md);
+    font-weight: 500;
+    color: var(--third-color);
+    text-align: start;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 10px;
+}
+
+.selector__container {
+    display: grid;
+    background-color: var(--third-color);
+    gap: 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: var(--sm);
+}
+
+.button__text--bold {
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+.selector__description {
+    color: var(--text-color);
+    line-height: 18px;
+}
+
+.selector__description strong, .selector__sintaxis p, .example__title  {
+    font-weight: bold;
+    color: var(--first-color);
+}
+
+.selector__sintaxis {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.selector__sintaxis h4 {
+    color: var(--third-color);
+    background-color: var(--second-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.selector__example {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+.example__code {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.code__property {
+    color: #0077C2;
+}
+
+/* estilos para la sección 2 (Mockup) */
+
+.mockup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mockup__title {
+    font-size: var(--lg);
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.desing {
+    width: 902px;
+    height: 632px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/recursos/desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* estilos para la sección 3 (about me) */
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.aboutMe__container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    max-height: 225px;
+}
+
+.aboutMe__img img {
+    width: 229px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.aboutMe__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info__container h2 {
+    font-size: var(--lg);
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.info__container p {
+    font-size: var(--md);
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+.social__container {
+    display: flex;
+    gap: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--first-color);
+    padding: 24px;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__list {
+    display: flex;
+    gap: 10px;
+    font-size: var(--md);
+    font-weight: 400;
+    color: white;
+}
+
+.footer__credits {
+    color: white;
+    font-weight: 200;
+}
+
+
+
+
+
+
+/* estilos para tablets */
+
+@media (max-width: 768px) and (min-width: 480px) {
+    :root {
+        --sm: 16px;
+        --md: 18px;
+        --lg: 20px; 
+    }
+
+    section {
+        padding: 16px 40px;
+    }
+
+    .selector {
+        flex-direction: column;
+    }
+
+    .desing {
+        width: 510px;
+        height: 736px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/recursos/tablet.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aboutMe img {
+        width: 161px;
+        height: 162px;
+    }
+}
+
+/* estos estilos son para dispositivos mobiles */
+
+@media (max-width: 480px) {
+
+    :root {
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px; 
+    }
+
+    .header__menu {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 0;
+        background: none;
+    }
+
+    .header__nav {
+        position: absolute;
+        right: 15px;
+        top: 70px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s ease;
+        gap: 8;
+        background-color: var(--third-color);
+        border-radius: 10px;
+    }
+
+    .list__item {
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--first-color);
+    }
+
+    section {
+        padding: 16px 24px;
+    }
+
+    .selector {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .selector__option {
+        width: 432px;
+    }
+
+
+    .desing {
+        width: 320px;
+        height: 712px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/recursos/galaxy-s10-mockup-removebg-preview.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aboutMe__container {
+        flex-wrap: wrap;
+        max-width: 100%;
+        max-height: 269px;
+    }
+
+    .aboutMe img {
+        width: 161px;
+        height: 162px;
+    } 
+
+    .info__container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social__container {
+        justify-content: center;
+        align-items: center;
+    }
+}
